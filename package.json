@@ -1,11 +1,16 @@
 {
-  "name": "recepie-app",
+  "name": "recipes-app",
   "version": "1.0.0",
+  "description": "Recipes API Backend",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node server.js",         // ✅ Render will use this
+    "dev": "nodemon server.js"         // ✅ For local development
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "dependencies": {
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
