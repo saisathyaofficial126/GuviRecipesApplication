@@ -3,6 +3,9 @@ const connectDB = require("./config/db")
 const recipeRoutes = require("./router/recipeRouter")
 
 const app = express(); //to create the express application
+app.get("/", (req, res) => {
+  res.send("Recipes API is running 🚀");
+});
 
 require("dotenv").config(); 
 const PORT = process.env.PORT;
